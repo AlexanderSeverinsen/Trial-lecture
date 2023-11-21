@@ -1,0 +1,37 @@
+
+##
+### What is retrofitting a building?
+
+::: {.absolute top="15%" left="0%"}
+![](pictures/self_portrait.png){width=35%}
+:::
+
+::: {.absolute top="15%" left="45%"}
+::: {style="font-size: 0.8em"}
+
+> Changing a building system or structure *after* its initial construction and occupation
+
+::: 
+:::
+
+::: {.absolute top="44%" left="45%"}
+::: {style="font-size: 0.7em"}
+::: {.incremental}
+
+- Installing a new heat pump
+- Ventilation with heat recovery
+- New insulation
+- Solar panels
+- **Meeting the Paris Agreement ambitions = more energy efficient households**
+
+:::
+:::
+:::
+
+::: {.absolute top="70%" left="0%"}
+::: {style="color: #B2BEB5; font-size: 0.35em"}
+Source: "Self-portrait during a recent retrofitting project" </br> 
+Credit: Open AI DALL-E
+::: 
+:::
+

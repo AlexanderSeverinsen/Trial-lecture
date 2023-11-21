@@ -1,0 +1,67 @@
+---
+format: 
+  revealjs:
+    theme: ["fonts_aneo.scss"]
+    css: styles.css
+    slide-number: true
+    self-contained: true
+from: markdown+emoji
+---
+
+{{< include slides/_s1_trial_lecture_frontpage.qmd >}}
+
+{{< include slides/_s2_agenda.qmd >}}
+
+{{< include slides/_s3_global_total_energy_use.qmd >}}
+
+{{< include slides/_s4_global_by_sector.qmd >}}
+
+{{< include slides/_s5_global_energy_use.qmd >}}
+
+{{< include slides/_s6_energy_non_residential.qmd >}}
+
+{{< include slides/_s7_savings_potential_digitalization.qmd >}}
+
+{{< include slides/_s8_potential_Norway.qmd >}}
+
+{{< include slides/_s9_retrofitting.qmd >}} 
+
+{{< include slides/_s10_energy_efficiency.qmd >}}
+
+{{< include slides/_s11_oil_prices.qmd >}}
+
+{{< include slides/_s12_ad_campaigns.qmd >}}
+
+{{< include slides/_s13_eia.qmd >}} 
+
+{{< include slides/_s14_khazoom.qmd >}} 
+
+{{< include slides/_s15_definition.qmd >}} 
+
+{{< include slides/_s16_indirect_and_direct_rebound_effects.qmd >}} 
+
+{{< include slides/_s17_rebound_methods_ex0.qmd >}}
+
+{{< include slides/_s18_rebound_methods_ex1.qmd >}}
+
+{{< include slides/_s19_rebound_methods_ex2.qmd >}}
+
+{{< include slides/_s20_rebound_methods_ex3.qmd >}}
+
+{{< include slides/_s21_rebound_methods_ex4.qmd >}}
+
+{{< include slides/_s22_rebound_methods_ex5.qmd >}}
+
+{{< include slides/_s23_prebound_germany.qmd >}}
+
+{{< include slides/_s24_direct_rebound_effects.qmd >}} 
+
+{{< include slides/_s25_rebound_norway.qmd >}}
+
+{{< include slides/_s26_recent_evidence.qmd >}}
+
+{{< include slides/_s27_only_a_price_effect.qmd >}}
+
+{{< include slides/_s28_conclusion.qmd >}}
+
+{{< include slides/_s29_thank_you.qmd >}}

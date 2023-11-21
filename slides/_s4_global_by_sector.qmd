@@ -1,0 +1,40 @@
+
+##
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/buildings_earth.png){width="50%"}
+:::
+
+::: {.absolute top="20%" left="50%"}
+
+::: {style="font-size: 0.75em"}
+::: {.incremental}
+- Buildings consume about 40% of all produced energy
+- Significant contributors to greenhouse gas emission
+- Energy efficient buildings is vital to reduce emissions
+:::
+:::
+
+:::
+
+
+::: {.absolute top="87%" left="0%"}
+::: {style="font-size: 0.33em"}
+Credit: Open AI DALL-E *"Buildings invading the world"*
+:::
+:::
+
+
+
+
+::: {.absolute top="97%" left="0%"}
+::: {style="font-size: 0.33em"}
+Source: *Global Status Report 2017*, World Green Building Council <https://worldgbc.org/wp-content/uploads/2022/03/UNEP-188_GABC_en-web.pdf>
+:::
+:::
+
+
+
+
+
+

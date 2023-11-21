@@ -1,0 +1,49 @@
+
+##
+### More than a price effect? :moneybag:
+
+
+Economist define rebound effects as a *price* effect^[Berkhout et al. 2000]
+
+
+::: {.absolute top="25%" left="0%"}
+::: {.fragment .fade-in}
+![](pictures/galvin_front_page.jpg){width="30%"}
+:::
+:::
+
+
+
+::: {.absolute top="30%" left="35%"}
+::: {style="font-size: 0.6em"}
+::: {.incremental}
+- After a retrofitting the household *functions* differently, it just *is* warmer :arrow_right: *physical* effect
+- Advanced thermostats and timers, many households find these difficult to use :arrow_right: *user interface* effect 
+- Underfloor heating, not easy to adapt to daily rhythms of life :arrow_right:  *sosio-technical mismatch* effect
+- Gaps in insulation, poorly matched boilers :arrow_right: *technology failure* effect
+:::
+:::
+:::
+
+
+
+
+
+
+<!--Berkhout Peter HG, Muskens Jos C., Velthuijsen Jan W. (2000). Defining the rebound effect. Energy Policy 28 (6/7), 425–432.
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+

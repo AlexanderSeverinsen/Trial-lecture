@@ -1,0 +1,28 @@
+
+##
+### Global total energy use
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/global_total_energy_use.png){width="100%"}
+:::
+
+::: {.absolute top="95%" left="0%"}
+::: {style="font-size: 0.35em"}
+Notes: EJ = exajoules </br>
+Source: IEA, World total final consumption by source, 1971-2019, IEA, Paris </br> <https://www.iea.org/data-and-statistics/charts/world-total-final-consumption-by-source-1971-2019>
+:::
+:::
+
+
+
+
+
+
+<!-- Improving residential cooling equipment performance would save 3.5 EJ of
+energy to 2025 – slightly less than total electricity use in India in 2015
+https://worldgbc.org/wp-content/uploads/2022/03/UNEP-188_GABC_en-web.pdf
+. -->
+
+
+
+

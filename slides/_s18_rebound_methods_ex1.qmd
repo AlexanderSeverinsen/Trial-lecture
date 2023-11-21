@@ -1,0 +1,157 @@
+
+##
+### Rebound effect - case study
+
+::: {.absolute top="13%" left="0%"}
+::: {.fragment .fade-in}
+```{r eval=TRUE}
+#| echo: false
+#| fig-height: 4.5
+#| fig-width: 4.5
+
+
+library(grid)
+library(ggrepel)
+df <- data.frame(x=c(0, 10),
+                y=c(0, 10))
+
+df2 <- data.frame(x=c(0, 10),
+                y=c(2, 6))
+
+df3 <- data.frame(x=c(8, 2),
+                y=c(5.2, 2.8))
+
+
+ggplot() +
+  geom_line(data=df, aes(x, y)) + # expected consumption
+  #geom_line(data=df2, aes(x, y)) +
+  #geom_point(data=df3, aes(x, y), color="blue", size=4, shape=4) +
+  xlab("Calculated energy consumption (C)") +
+  ylab("Actual energy consumption (E)") +
+  theme(axis.text.x=element_blank(), #remove x axis labels
+         axis.ticks.x=element_blank(), #remove x axis ticks
+         axis.text.y=element_blank(),  #remove y axis labels
+         axis.ticks.y=element_blank(),
+         axis.title.x = element_text(size = 16),
+         axis.title.y = element_text(size = 16)  #remove y axis ticks
+         )  + 
+  annotate("text", x = 9, y = 10, label = "E = C") 
+```
+:::
+:::
+
+
+::: {.absolute top="15%" left="45%"}
+::: {.fragment .fade-in}
+```{r eval=TRUE}
+library(tidyverse)
+library(gtExtras)
+library(gt)
+status <- c("After upgrade (kWh/m\u00b2\ annual)","After upgrade (kWh/m\u00b2\ annual)")
+variables <- c("Calculated consumption (C2)","Actual consumption (E2)")
+values <- c(97,102)
+
+nuremberg <- tibble(status,variables,values)
+
+nuremberg %>%
+  group_by(status) %>%
+  gt() %>%
+  tab_options(column_labels.hidden = TRUE) %>%
+  as_raw_html()
+
+```
+:::
+:::
+
+
+
+::: {.absolute top="13%" left="0%"}
+::: {.fragment .fade-in}
+```{r eval=TRUE}
+#| echo: false
+#| fig-height: 4.5
+#| fig-width: 4.5
+
+
+library(grid)
+library(ggrepel)
+df <- data.frame(x=c(0, 10),
+                y=c(0, 10))
+
+df2 <- data.frame(x=c(0, 10),
+                y=c(2, 6))
+
+df3 <- data.frame(x=c(8, 2),
+                y=c(5.2, 2.8))
+
+
+ggplot() +
+  geom_line(data=df, aes(x, y)) + # expected consumption
+  #geom_line(data=df2, aes(x, y)) +
+  #geom_point(data=df3, aes(x, y), color="blue", size=4, shape=4) +
+  xlab("Calculated energy consumption (C)") +
+  ylab("Actual energy consumption (E)") +
+  theme(axis.text.x=element_blank(), #remove x axis labels
+         axis.ticks.x=element_blank(), #remove x axis ticks
+         axis.text.y=element_blank(),  #remove y axis labels
+         axis.ticks.y=element_blank(),
+         axis.title.x = element_text(size = 16),
+         axis.title.y = element_text(size = 16)  #remove y axis ticks
+         ) +
+   geom_segment(aes(x = 2, y =0, xend=2, yend=4), color="blue", linetype = 2) + # vertical right
+   geom_segment(aes(x = 0, y =2.8, xend=2.8, yend=2.8), color="blue", linetype = 2) +   # horizontal
+   annotate("text", x = 9, y = 10, label = "E = C") +
+   annotate("text", x = 1.5, y = 2.2, label = "After") +
+   annotate("text", x = 2, y = -0.3, label = "C2 (97)") +
+   annotate("text", x = -0.3, y = 2.8, label = "E2 \n (102)")
+```
+:::
+:::
+
+
+::: {.absolute top="50%" left="20%"}
+::: {.fragment .fade-in-then-out}
+![](pictures/energimerke_B.jpeg){width="10%"}
+:::
+:::
+
+
+::: {.absolute top="20%" left="5%"}
+::: {.fragment .fade-in-then-out}
+![](pictures/happy_man.png){width="15%"}
+:::
+:::
+
+
+::: {.absolute top="38%" left="45%"}
+::: {style="font-size: 0.5em"}
+::: {.fragment .fade-in}
+Energy performance gap (EPG)
+:::
+:::
+:::
+
+::: {.absolute top="45%" left="45%"}
+::: {style="font-size: 0.5em"}
+::: {.fragment .fade-in}
+$$
+EPG = {\frac{E2  - C2}{C2}} = \frac{102-97}{97} =  0.052 \text{ or 5.2% } 
+$$
+:::
+:::
+:::
+
+
+::: {.absolute top="60%" left="45%"}
+::: {style="font-size: 0.6em"}
+::: {.incremental}
+- A 'rebound' effect of 5.2% does not seem to bad!?
+- However, the actual consumption before retrofitting is not taken into account
+:::
+::: 
+:::
+
+
+
+
+

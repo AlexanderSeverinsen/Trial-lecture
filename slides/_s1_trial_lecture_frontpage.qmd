@@ -1,0 +1,43 @@
+
+::: {.absolute top="15%" left="0%"}
+![](pictures/going_to_spain.png){width="400"}
+:::
+
+
+
+
+
+::: {.absolute top="15%" left="45%"}
+::: {style="font-size: 0.9em"}
+
+The rebound effect in building heating retrofits: Theory and empirical evidence
+
+:::
+:::
+
+
+::: {.absolute top="40%" left="45%"}
+::: {style="font-size: 0.55em"}
+
+Trial lecture </br>
+</br>
+Alexander Severinsen </br>
+Norwegian University of Life Sciences <br>
+School of Economics and Business </br>
+</br>
+April 13, 2023
+
+
+:::
+:::
+
+::: {.absolute top="73%" left="0%"}
+::: {style="font-size: 0.35em"}
+Source: Generative art, Open AI DALL-E </br>
+*"Money saved from more efficient heating to fly to Spain"*
+::: 
+:::
+
+
+
+

@@ -1,0 +1,157 @@
+
+##
+### Norwegian building categories
+
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/kwm_m2_norw_build.png){width="100%"}
+:::
+
+::: {.absolute top="75%" left="0%"}
+::: {style="font-size: 0.7em"}
+::: {.incremental}
+- Energy consumption in Norwegian households in 2021 = 39,8 TWh (of a total of 139,5 TWh)
+- About 80% for heating purposes
+:::
+:::
+:::
+
+```{r eval=FALSE}
+library(reactablefmtr)
+library(tidyverse)
+
+
+# making data from https://publikasjoner.nve.no/rapport/2016/rapport2016_24.pdf
+Kategori <- c("Oppvarming","Tappevann", "Ventilasjon", "Belysning", "El.-spesifikk", "Kjøling", "Totalt")
+Childcare <- c(121,9,27,18,25,0,200) 
+Office <- c(72,11,23,37,72,20,235) 
+School <- c(99,6,13,26,26,0,170) 
+University <- c(96,18,36,40,49,20,260) 
+Hospital <- c(125,32,0,0,171,52,380) 
+`Nursing home` <- c(136,26,31,27,39,1,260) 
+Hotel <- c(101,39,30,30,37,3,240) 
+`Sports building` <- c(85,24,32,35,37,23,235) 
+Business <- c(71,8,35,NaN,187,19,320) 
+`Cultural building` <- c(166,3,21,22,30,3,245) 
+`Light industry` <- c(161,4,13,32,39,6,255) 
+
+econ_nonres <- tibble(Kategori, Childcare, Office, School, University, Hospital, `Nursing home`, Hotel, `Sports building`, Business, `Cultural building`, `Light industry`)
+
+econ_nonres <- econ_nonres %>%
+   pivot_longer(cols = -Kategori, names_to = 'Byggkategori') %>% 
+   pivot_wider(names_from = Kategori, values_from = value) 
+
+econ_nonres <- econ_nonres %>%
+  mutate(prc_heating = Oppvarming/Totalt,
+         prc_tapwater = Tappevann/Totalt,
+         prc_ventilation = Ventilasjon/Totalt,
+         prc_lights = Belysning/Totalt,
+         prc_el = `El.-spesifikk`/Totalt,
+         prc_cooling = Kjøling/Totalt) %>%
+  select(Byggkategori, prc_heating, prc_tapwater, prc_ventilation,prc_lights,prc_el,prc_cooling, Totalt) %>%
+  arrange(desc(Totalt))
+
+
+# gen table
+reactable(
+  econ_nonres,
+  pagination = FALSE,
+  showSortIcon = FALSE,
+  theme = nytimes(),
+  defaultSortOrder = "desc",
+  defaultSorted = "prc_heating",
+   columns=list(
+     Byggkategori = colDef(
+       'Building category',
+       maxWidth=200
+     ),
+     prc_heating = colDef(
+      'Heating',
+             align = "left",
+       maxWidth=100,
+       cell = data_bars(econ_nonres,
+                        fill_color = c("orange"),
+                        number_fmt = scales::percent,
+                        max=1,
+                         text_position = "above"),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     ),
+     prc_tapwater= colDef(
+      'Tap water',
+             align = "left",
+       maxWidth=100,
+       cell = data_bars(econ_nonres,
+                        number_fmt = scales::percent,
+                        max=1,
+                        text_position = "above"),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     ),
+     prc_ventilation = colDef(
+       'Ventilation',
+              align = "left",
+        maxWidth=100,
+       cell = data_bars(econ_nonres,
+                        number_fmt = scales::percent,
+                        max=1,
+                        text_position = "above"),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     ),
+       prc_lights = colDef(
+       'Lights',
+              align = "left",
+       maxWidth=100,
+       cell = data_bars(econ_nonres,
+                        number_fmt = scales::percent,
+                        max=1,
+                        text_position = "above"),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     ),
+       prc_el = colDef(
+       'El. specific',
+              align = "left",
+       maxWidth=100,
+       cell = data_bars(econ_nonres,
+                        number_fmt = scales::percent,
+                        max=1,
+                        text_position = "above"),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     ),
+       prc_cooling = colDef(
+       'Cooling',
+              align = "left",
+       maxWidth=100,
+       cell = data_bars(econ_nonres,
+                        number_fmt = scales::percent,
+                        max=1,
+                        text_position = "above"),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     ),
+       Totalt = colDef(
+       'Total kWh/m2 annual',
+       align = "left",
+       maxWidth=200,
+       cell = data_bars(econ_nonres,
+                        text_position = "outside-base",
+                        bar_height = 10),
+       style = list(borderLeft = "1px dashed rgba(0, 0, 0, 0.3)")
+     )
+   )
+) %>%   
+  add_subtitle(
+    subtitle = 'Total energy intensity (kWh/m2/annual) and % energy sources in Norwegian building categories',
+    font_size = 20,
+    font_color = '#666666',
+    margin = reactablefmtr::margin(t=10,r=0,b=15,l=0)
+  ) %>%
+    add_source(
+      source = 'Adapted from NVE rapport 24/2016',
+      font_style = 'italic'
+  )
+
+```
+
+
+
+
+
+

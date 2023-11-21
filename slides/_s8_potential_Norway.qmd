@@ -1,0 +1,175 @@
+
+##
+### Savings potential Norwegian buildings
+
+<!-- Based on email 23 March from Karen Byskov Lindberg -->
+
+
+
+::: {.absolute top="10%" left="0%"}
+
+```{r}
+#| echo: false
+#| fig-height: 4.5
+#| fig-width: 10
+
+# https://r-graph-gallery.com/web-horizontal-barplot-with-labels-the-economist.html
+
+library(grid)
+library(tidyverse)
+library(shadowtext)
+
+
+names <- c("Improved new buildings (1.4 TWh)",
+           "Renovation (5.7 TWh)", 
+           "Heat pumps (16 TWh)", 
+           "Solar PV integrated (10-30 TWh)")
+
+
+# Name is an ordered factor. We do this to ensure the bars are sorted.
+data <- data.frame(
+  count = c(1.4,5.7,16,30), 
+  name = factor(names, levels = names),
+  y = seq(length(names)) * 0.9
+)
+
+
+# The colors
+BLUE <- "#076fa2"
+RED <- "#E3120B"
+BLACK <- "#202020"
+GREY <- "grey50"
+  
+
+
+plt <- ggplot(data) +
+  geom_col(aes(count, name), fill = BLUE, width = 0.6) 
+
+plt <- plt + 
+  scale_x_continuous(
+    limits = c(0, 55.5),
+    breaks = seq(0, 55, by = 5), 
+    expand = c(0, 0), # The horizontal axis does not extend to either side
+    position = "top"  # Labels are located on the top
+  ) +
+  # The vertical axis only extends upwards 
+  scale_y_discrete(expand = expansion(add = c(0, 0.5))) +
+  theme(
+    # Set background color to white
+    panel.background = element_rect(fill = "white"),
+    # Set the color and the width of the grid lines for the horizontal axis
+    panel.grid.major.x = element_line(color = "#A8BAC4", size = 0.3),
+    # Remove tick marks by setting their length to 0
+    axis.ticks.length = unit(0, "mm"),
+    # Remove the title for both axes
+    axis.title = element_blank(),
+    # Only left line of the vertical axis is painted in black
+    axis.line.y.left = element_line(color = "black"),
+    # Remove labels from the vertical axis
+    axis.text.y = element_blank(),
+    # But customize labels for the horizontal axis
+    #axis.text.x = element_text(family = "Econ Sans Cnd", size = 16)
+  ) + 
+  scale_x_continuous(
+    limits = c(0, 30.5),
+    breaks = seq(0, 30, by = 5), 
+    expand = c(0, 0), # The horizontal axis does not extend to either side
+    position = "top"  # Labels are located on the top
+  ) +
+  # The vertical axis only extends upwards 
+  scale_y_discrete(expand = expansion(add = c(0, 0.5))) +
+  theme(
+    # Set background color to white
+    panel.background = element_rect(fill = "white"),
+    # Set the color and the width of the grid lines for the horizontal axis
+    panel.grid.major.x = element_line(color = "#A8BAC4", size = 0.3),
+    # Remove tick marks by setting their length to 0
+    axis.ticks.length = unit(0, "mm"),
+    # Remove the title for both axes
+    axis.title = element_blank(),
+    # Only left line of the vertical axis is painted in black
+    axis.line.y.left = element_line(color = "black"),
+    # Remove labels from the vertical axis
+    axis.text.y = element_blank(),
+    # But customize labels for the horizontal axis
+   # axis.text.x = element_text(family = "Econ Sans Cnd", size = 16)
+  )
+
+plt <- plt + 
+  geom_shadowtext(
+    data = subset(data, count < 6),
+    aes(count, y = name, label = name),
+    hjust = 0,
+    nudge_x = 0.3,
+    colour = BLUE,
+    bg.colour = "white",
+    bg.r = 0.2,
+    #family = "Econ Sans Cnd",
+    size = 6
+  ) + 
+  geom_text(
+    data = subset(data, count >= 6),
+    aes(0, y = name, label = name),
+    hjust = 0,
+    nudge_x = 0.3,
+    colour = "white",
+    #family = "Econ Sans Cnd",
+    size = 6
+  )
+
+plt <- plt +
+  labs(
+    title = "Year 2020-2050",
+  ) + 
+  theme(
+    plot.title = element_text(
+     # family = "Econ Sans Cnd", 
+      face = "bold",
+      size = 20
+    ),
+    plot.subtitle = element_text(
+      #family = "Econ Sans Cnd",
+      size = 17
+    )
+  )
+
+
+plt
+
+
+
+```
+
+:::
+
+
+::: {.absolute top="75%" left="0%"}
+::: {style="font-size: 0.63em"}
+**Total potential ≈ 35-50 TWh**
+:::
+:::
+
+
+<!-- Fade in example from grocery stores -->
+::: {.absolute top="50%" left="39%"}
+::: {style="font-size: 0.63em"}
+::: {.fragment .fade-in}
+**1 TWh = 1 000 000 000 kWh** </br>
+Norwegian household ≈ 16 000 kWh - 25 0000 kWh
+:::
+:::
+:::
+
+
+
+::: {.absolute top="95%" left="0%"}
+::: {style="color: #B2BEB5; font-size: 0.35em"}
+Source: Sandberg et al. *Mål om 10 TWh energisparing i Bygningsmassen", Praktisk økonomi og finans nr. 1/2022*. <https://www.idunn.no/doi/10.18261/pof.38.1.2> </br>
+Solar scenarios according to *Institute for Energy Technology (IFE)*, *The Norwegian Water Resources and Energy Directorate (NVE)* and *The Research Center for Sustainable Solar Cell Technology (SuSolTech)*
+:::
+:::
+
+
+
+
+

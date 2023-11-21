@@ -1,0 +1,61 @@
+
+## Setting the scene
+
+::: {.absolute top="24%" left="35%"}
+::: {style="font-size: 0.85em"}
+:::{.fragment .fade-in-then-out}
+
+
+- The U.S. Energy Information Administration (EIA) founded in 1977
+- Promote sound policymaking
+- Public understanding of energy
+
+
+:::
+:::
+:::
+
+<!-- public understanding of energy and its interaction with the economy and the environment.
+Part of the US Department of energy -->
+
+
+::: {.absolute top="20%" left="30%"}
+::: {style="font-size: 0.9em"}
+::: {.fragment .fade-in}
+
+::: {.incremental}
+**The 1979 EIA report** :scroll:
+
+
+- Raise efficiency by 1 percent, demand drop by 1 percent
+- Raise efficiency by 2 percent, demand drop by 2 percent
+- ; and so on
+:::
+
+:::
+:::
+:::
+
+
+
+::: {.absolute top="20%" left="0%"}
+![](pictures/eia-logomark.svg){width="250"}
+:::
+
+
+
+
+::: {.absolute top="85%" left="0%"}
+::: {style="font-size: 0.35em"}
+::: {.fragment .fade-in}
+California Energy Commission. Technical Documentation of the Residential Sales Forecasting Model: Electricity and Natural Gas (staff report). Xerolith, October 1979. </br>
+Department of Energy. Model Documentation Report , Short Term Gasoline Demand Forecasting Model. Energy Information Administration, Office of Integrative Analysis. Xerolith, November 1979. </br>
+Department of Energy. Short-Term Energy Outlook. Analysis Report AR/IA/80. Xerolith draft, February 1980
+:::
+:::
+:::
+
+
+
+
+

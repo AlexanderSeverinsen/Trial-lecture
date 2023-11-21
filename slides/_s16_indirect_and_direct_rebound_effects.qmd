@@ -1,0 +1,112 @@
+
+##
+### Different rebound effects
+
+
+::: {.absolute top="15%" left="00%"}
+::: {style="font-size: 0.85em"}
+Example from a newly thermally retrofitted home
+:::
+:::
+
+
+
+::: {.absolute top="25%" left="00%"}
+::: {style="font-size: 0.8em"}
+::: {.fragment .fade-in}
+Direct rebound effects
+:::
+:::
+:::
+
+::: {.absolute top="25%" left="50%"}
+::: {style="font-size: 0.8em"}
+::: {.fragment .fade-in}
+Indirect rebound effects
+:::
+:::
+:::
+
+::: {.absolute top="35%" left="00%"}
+::: {style="font-size: 0.7em"}
+
+
+::: {.incremental}
+- The cost per unit of </br> indoor warmth is lower
+- The householder keeps </br> higher indoor temperatures
+- Heats more rooms
+- Opens the windows for </br> longer periods
+:::
+
+:::
+:::
+
+
+::: {.absolute top="33%" left="50%"}
+::: {.fragment .fade-in}
+![](pictures/indirect_effects.png){width=65%}
+:::
+:::
+
+::: {.absolute top="86%" left="50%"}
+::: {.fragment .fade-in}
+::: {style="font-size: 0.35em"}
+Credit: OPEN AI DALL-E *"Endless shopping opportunities"*
+::: 
+:::
+:::
+
+
+
+<!-- 
+
+Source: OPEN AI DALL-E *"The shopping possibilities are endless"*
+
+<!--Berkhout Peter HG, Muskens Jos C., Velthuijsen Jan W. (2000). Defining the rebound effect. Energy Policy 28 (6/7), 425–432.
+
+Chitnis M., Sorrell S., Druckman A., Firth S. K. and Jackson T. (2013) Turning lights into flights: Estimating direct and indirect rebound effects for UK households. Energy Policy 55: 234–250.
+
+
+It is possible, however, that some indirect rebound effects are not merely a ‘price’ effect
+
+Druckman et al. (2011) 
+
+Does spending habits changed when they set out to reduce their CO2 emissions by 
+
+- reducing indoor temperatures 
+- not wasting food
+- and travelling less by car. 
+
+
+- average indirect rebound effect was 34 per cent
+- one household’s was as high as 515 per cent. 
+
+The unit of measurement was kilograms of CO2 emitted, rather than units of energy, but the principle is similar. 
+
+Heating, eating and travel became cheaper, so a portion of the savings were redeployed into other CO2-emitting practices.
+
+
+Druckman, Angela, Mona Chitnis, Steve Sorrell, and Tim Jackson. 2011. “Missing Carbon Reductions? Exploring Rebound and Backfire Effects in UK Households.” Energy Policy 39 (6): 3572–81.
+
+
+ Leonard Brookes, independetly of Khazoom, had similar ideas.
+ 
+Both called the phenomenon ‘backfire’ 
+
+In later papers, Khazzoom (1987; 1989) noted that this phenomenon had been observed in the nineteenth century by the English philosopher and economist William Stanley Jevons
+
+Jevons, William Stanley, 1865/1965. The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of Our Coal-mines, 3rd edition 1905. New York: Augustus M. Kelley.
+
+observed in the nineteenth century by the English philosopher and economist
+
+ that the more efficiently Britain consumed coal, the more coal it consumed
+ 
+It was in the midst of this debate that the terms ‘rebound’ and ‘rebound effect’ emerged. There is no certainty as to when precisely these terms began to be used. Lovins spoke of ‘rebound’ in this context in a brief paper in 1988 (Lovins, 1988), and the term ‘rebound effect’ was used in a conference discussion as early as 1983. 
+
+-->
+
+
+
+
+
+

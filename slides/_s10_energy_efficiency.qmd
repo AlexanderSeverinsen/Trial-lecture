@@ -1,0 +1,35 @@
+
+## Energy efficiency
+
+::: {.absolute top="15%" left="5%"}
+::: {style="font-size: 0.85em"}
+
+> Energy efficiency is the use of less energy to perform the same task or produce the same result
+
+:::
+:::
+
+::: {.fragment .fade-in}
+![](pictures/heating_home.png){.absolute top="40%" left="5%" width="270" height="270"}
+:::
+
+
+::: {.fragment .fade-in}
+![](pictures/gaming.png){.absolute top="40%" left="35%" width="270" height="270"}
+:::
+
+::: {.fragment .fade-in}
+![](pictures/factory.png){.absolute top="40%" left="65%" width="270" height="270"}
+:::
+
+<!--
+::: {.absolute top="40%" left="5%"}
+::: {style="font-size: 0.85em"}
+::: {.fragment .fade-in-then-out}
+- heating and cooling your home
+- running appliances and electronics
+- producing goods
+:::
+:::
+:::
+-->

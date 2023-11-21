@@ -1,0 +1,25 @@
+
+## Estimation methods
+
+Case study: a newly thermofitted home
+
+::: {.absolute top="32%" left="40%"}
+::: {style="font-size: 0.7em"}
+::: {.incremental}
+- Energy performance gap (`EPG`)
+- Energy savings deficit (`ESD`)
+- Elasticity rebound effect (`R`)
+- Example based on the 'Nuremberg case', adapted from Galvin (2014)
+:::
+:::
+:::
+
+
+
+::: {.absolute top="20%" left="0%"}
+![](pictures/methods.jpg){width="400"}
+:::
+
+
+
+

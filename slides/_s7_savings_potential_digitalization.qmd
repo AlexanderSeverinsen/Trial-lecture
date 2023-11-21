@@ -1,0 +1,57 @@
+
+##
+### Potential savings in buildings
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/savings_potential_digitalization.png){width=100%}
+:::
+
+
+::: {.absolute top="20.5%" left="69%"}
+
+::: {style="font-size: 0.65em"}
+230 EJ
+:::
+
+:::
+
+
+::: {.absolute top="18%" left="10%"}
+
+::: {style="font-size: 0.65em"}
+::: {.fragment .fade-in}
+10% global saving from smart controls
+:::
+:::
+
+:::
+
+
+
+
+::: {.absolute top="33%" left="9.3%"}
+
+::: {.fragment .fade-in}
+![](pictures/us_flag.png){width=9%}
+:::
+
+:::
+
+
+
+
+<!-- 
+
+::: {.absolute top="80%" left="0%"}
+::: {style="font-size: 0.35em"}
+Source: IEA (2017), Digitalization and Energy, IEA/OECD, Paris, <www.iea.org/digital/>
+::: 
+:::
+
+IEA analysis on the role of digitalisation in
+buildings finds that smart contols and connected devices
+could save 230 EJ in cumulative energy savings to 2040,
+lowering buildings energy consumption by as much as
+10% globally, while improving thermal comfort and delivering greater amenity to building occupants (Figure 5)
+
+-->

@@ -1,0 +1,46 @@
+
+##
+### Rebound effect definition
+
+::: {.absolute top="15%" left="0%"}
+
+![](pictures/agree_definition.png){width=45%}
+
+:::
+
+
+
+
+::: {.absolute top="28%" left="50%"}
+::: {style="font-size: 0.7em"}
+
+
+> The rebound effect occurs where an energy efficiency increase leads to an increase in the consumption of energy services[^1]
+
+[^1]: Special edition in *Energy Policy* (see the editorial: Schipper, 2000)
+
+
+:::
+:::
+
+
+
+
+<!--
+::: aside
+Picture source: Open AI DALL-E "Draw a picture of researchers arguing about a definition"
+:::
+
+
+## Energy services
+
+::: {.absolute top="24%" left="50%"}
+::: {style="font-size: 0.7em"}
+Tasks performed using energy
+
+- Space heating
+- Domestic water heating
+- Driving a car from A to B 
+:::
+:::
+-->

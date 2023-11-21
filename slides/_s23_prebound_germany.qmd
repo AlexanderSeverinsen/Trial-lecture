@@ -1,0 +1,82 @@
+
+##
+### Prebound effect in Germany
+
+::: {.absolute top="8%" left="0%"}
+![](pictures/prebound_effects_germany.png){width=100%}
+:::
+
+::: {.fragment .fade-in}
+::: {.absolute top="50%" left="0%"}
+![](pictures/prebound_effect.png){width=52%}
+:::
+:::
+
+
+::: {.absolute top="60%" left="55%"}
+::: {style="font-size: 0.65em"}
+::: {.incremental}
+- Governmental estimates of energy savings in Germany use the EPR 
+- Hence, does not take into account the actual behavior
+:::
+:::
+:::
+
+
+
+```{r eval=FALSE}
+library(reactablefmtr)
+library(tidyverse)
+epr <- c(261,220,209,220,175)
+actual <- c(150,152,153,135,140)
+prebound <- c(0.43,0.31,0.27,0.39,0.30)
+papers <- c("Knissel and Loga (2006)",
+           "Loga et al. (2011)",
+           "Kassner et al. (2010)",
+           "Jagnow and Wolf (2008)",
+           "Erhorn (2007)")
+
+df_prebound <- tibble(papers, epr, actual, prebound)
+
+reactable(
+  df_prebound,
+  defaultSortOrder = "desc",
+  defaultSorted = "epr",
+   columns=list(
+     papers = colDef(
+       ''
+     ),
+     epr = colDef(
+      'Average EPR (kWh/m2a)',
+       cell = data_bars(df_prebound)
+     ),
+     actual= colDef(
+      'Average measured consumption (kWh/m2a)',
+       cell = data_bars(df_prebound,
+                        max=261)
+     ),
+     prebound = colDef(
+       'Average prebound effect (%)',
+       cell = data_bars(df_prebound, 
+                        number_fmt = scales::percent,
+                        max_value = 1)
+     )
+   )
+) %>%   
+  add_title(
+    title = ''
+  ) %>%
+    add_subtitle(
+    subtitle = 'Energy performance rating (EPR) versus measured consumption before retrofitting ',
+    font_size = 20,
+    font_color = '#666666',
+    margin = reactablefmtr::margin(t=10,r=0,b=15,l=0)
+  ) %>%
+      add_source(
+    source = 'Adapted from Sunikka-Blank and Galvin (2012), studies of German households',
+    font_style = 'italic'
+  )
+
+```
+
+

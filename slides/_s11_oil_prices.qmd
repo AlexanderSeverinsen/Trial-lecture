@@ -1,0 +1,53 @@
+---
+format: 
+  revealjs:
+    theme: ["fonts_aneo.scss"]
+    css: styles.css
+from: markdown+emoji
+---
+
+## Setting the scene
+
+::: {.absolute top="15%" left="0"}
+```{r}
+#| echo: false
+#| fig-height: 3
+#| fig-width: 10
+library(readxl)
+library(tidyverse)
+crudeoil <- read_excel("data/crudeoil.xls", sheet = "Monthly")
+
+crudeoil %>%
+  filter(DATE >= '1960-01-01' & DATE <= '1977-01-01') %>% 
+  ggplot(aes(x=DATE,y=WTISPLC)) +
+    geom_line() +
+    xlab("Year") +
+    ylab("Dollars per Barrel") +
+    labs(caption = "Source: Federal Reserve Bank of St. Louis") +
+  theme(plot.caption = element_text(hjust=0))
+```
+:::
+
+::: {.absolute top="60%" left="0%"}
+::: {style="font-size: 0.80em"}
+::: incremental
+-   From October 1973 to March 1974 the price of oil quadrupled
+-   Energy policy shifted focus to include energy demand
+-   Several energy efficiency campaigns introduced
+:::
+:::
+:::
+
+::: {.absolute top="30%" left="45%"}
+$3 to $12 
+:::
+
+<!--  
+
+October 1973 to March 1974 the price of oil quadrupled, from US$3 to US$12 per barrel
+OECD countries initiated a regulatory process for higher energy efficiency standards in buildings and household appliances 
+The same phenomenon was observed by economist Len Brookes, working independently from Khazzoom (Brookes, 1990)
+
+Brookes, Leonard, 1990. The greenhouse effect: The fallacies in the energy efficiency solution. Energy Policy 18 (2), 199–201
+-->
+

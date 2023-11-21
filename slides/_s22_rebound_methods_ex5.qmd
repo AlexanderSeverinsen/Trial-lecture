@@ -1,0 +1,36 @@
+
+## Why is this important?
+
+::: {.absolute top="20%" left="0%"}
+![](pictures/why_important.png){width="350"}
+:::
+
+
+::: {.absolute top="25%" left="45%"}
+::: {style="font-size: 0.6em"}
+
+
+::: {.incremental}
+- Case studies may use different definitions (`R`, `EPG`, `ESD`)^[Galvin R. (2014a)]
+- The *elasticity rebound effect* is the only one that produces consistently coherent results
+- Important in government reports^[Maxwell D. and McAndrew L. (2011)] 
+:::
+
+::: 
+:::
+
+
+
+
+<!-- 
+
+Galvin R. (2014a) Making the ‘rebound effect’ more useful for performance evaluation of thermal retrofits of existing homes: Defining the ‘energy savings deficit’ and the ‘energy performance gap’. Energy and Buildings, 69: 515–524
+
+Maxwell D., McAndrew L. (2011) Addressing the Rebound Effect. European Commission DG ENV: A project under the Framework contract ENV.G.4/FRA/2008/0112.
+
+EST (Energy Savings Trust) (2013) Are you a victim of rebound? Available at: http://www.energysavingtrust.org.uk/Take-action/Reduce-your-carbon-footprint/Are-you-a-victim-of-rebound (Accessed 3 April 2013).
+
+DECC (Department of Energy and Climate Change) (2008) Evaluation of the Energy Efficiency Commitment 2002–05, Wantage, UK: Eoin Lees Energy, 2006.
+
+-->
+

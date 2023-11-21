@@ -1,0 +1,126 @@
+
+##
+### Direct rebound effects
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/rebound_effects.png){width=100%}
+:::
+
+
+::: {.absolute top="50%" left="0%"}
+::: {.fragment .fade-in}
+::: {style="font-size: 0.35em"}
+Haas and Biermayer (2000). Heating Austrian households.
+:::
+![](pictures/haas_rebound_austria.png){width=50%}
+:::
+:::
+
+
+::: {.absolute top="65%" left="40%"}
+::: {style="font-size: 0.65em"}
+::: {.incremental}
+
+- A lot of variation within the same study
+- What about Norway?
+:::
+:::
+:::
+
+
+```{r eval=FALSE}
+library(reactablefmtr)
+library(tidyverse)
+
+rebound <- c(0.3,0.0,0.5,0.3,0.65,0.15)
+papers <- c("Haas and Biermayr (2000)",
+           "Greening et al. (2000)",
+           "Greening et al. (2000)",
+           "Greening et al. (2000)",
+           "Khazzoom (1986)",
+           "Schipper and Grubb (2000)")
+Category <- c("Heating",
+           "White goods",
+           "Space cooling",
+           "Heating, lighting, automotive",
+           "Heating",
+           "Multiple categories")
+Country <- c("Austria","United States","United States","United States","Sacramento, California","OECD countries")
+Data <- c("500 Households","Review study","Review study","Review study","Households","Review study")
+
+df_rebound <- tibble(papers, Category, Data, Country, rebound) %>%
+  mutate(response_colors = case_when(
+    Category == 'Heating' ~ '#127852',
+    TRUE ~ '#A5A0A1'
+  ))
+
+reactable(
+  df_rebound,
+  defaultSortOrder = "desc",
+  defaultSorted = "rebound",
+   columns=list(
+     response_colors = colDef(show = FALSE),
+     Data = colDef(maxWidth = 150),
+     papers = colDef(
+       'Study'
+     ),
+     rebound = colDef(
+       'Rebound effect (%)',
+       cell = data_bars(df_rebound,
+                        fill_color_ref = 'response_colors',
+                        text_position = 'outside-end',
+                        text_color_ref = 'response_colors',
+                        number_fmt = scales::percent,
+                        max_value = 1)
+     )
+   )
+) %>%   
+  add_title(
+    title = 'Selected studies between 1986 - 2000'
+  ) 
+
+```
+
+
+<!--
+
+*Direct rebound effect - micro effects/household level)*
+Substitution effect 
+Income effect 
+
+In a study of heating energy use in Austria Haas and Biermayr (2000) 
+cross-sectional and longitudinal statistical analysis, included intervention study looking at the change of energy use in apartment buildings with a building retrofit. They find a 30% rebound of heating energy in all cases.
+
+Greening and colleagues (2000) present a comprehensive survey of studies in the United States, which indicates that the rebound effect is somewhere between 0% (for white goods) and 50% (for space cooling), but typically less than 30% (space heating, lighting, automotive transport).
+
+Khazzoom (1986) on electrically heated homes in Sacramento, California in the USA shows a rebound effect of as high as 65%
+
+Schipper and Grubb (2000) review studies covering 80–90% of energy use in OECD countries and find that the rebound is on the order of 5–15%
+
+
+Haas, R. and P. Biermayr. 2000. The rebound effect for space heating—Empirical evidence from Austria. Energy Policy 28(6–7): 403–410
+
+Khazzoom, J. D. 1986. An econometric model integrating conservation in the estimation of the residential demand for electricity. Greenwich, CT: JAI Press
+
+
+*Macro effects (interaction producers and consumers)*
+Secondary effects
+Economy wide effects
+Transformational effects
+
+
+::: {.absolute top="95%" left="0%"}
+::: {style="font-size: 0.35em"}
+Greening and colleagues (2000)
+:::
+:::
+
+-->
+
+
+
+
+
+
+
+

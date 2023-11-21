@@ -1,0 +1,111 @@
+
+## Setting the scene
+
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/khazoom_frontpage.png){width="500"}
+:::
+
+::: {.absolute top="20%" left="47%"}
+::: {style="font-size: 0.70em"}
+
+::: {.incremental}
+- Daniel Khazzom disagreed 
+- Questioned that energy efficiency leads to reduced energy demand
+- Only a portion of these, if any, was being utilized to save energy
+
+:::
+
+:::
+:::
+
+## Setting the scene
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/khazoom_frontpage.png){width="500"}
+:::
+
+::: {.absolute top="20%" left="47%"}
+::: {style="font-size: 0.47em"}
+::: {.fragment .fade-in}
+
+> ...when a consumer buys a car that gets 30 mpg to replace one that gets 10 mpg, his price  of gasoline per mile drops to a third of what it used to be. In all likelihood he will not be as sparing in driving his car as before. He may not take the bus any longer, or he may stop carpooling (Khazzom, 1980, p. 20)
+
+
+:::
+:::
+:::
+
+
+::: {.absolute top="50%" left="47%"}
+::: {style="font-size: 0.60em"}
+
+::: {.incremental}
+- The improvements could 'backfire'
+- Brookes (1990) observed the same
+- But Lovins (1988) argued "*those effects would be insignificantly small...*"
+
+:::
+
+:::
+:::
+
+
+## Setting the scene
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/khazoom_frontpage.png){width="500"}
+:::
+
+
+::: {.absolute top="20%" left="47%"}
+::: {style="font-size: 0.60em"}
+The correspondance was quite hefty :mailbox_with_mail: </br>
+
+:::
+:::
+
+::: {.absolute top="35%" left="47%"}
+::: {style="font-size: 0.50em"}
+::: {.fragment .fade-in}
+Khazoom (1989) about Lovins (1988): </br></br>
+*"...precious little substance"* </br></br>
+*"...makes statements about facts, which are not supported by the evidence"* </br></br>
+*"...lack of command of the basics of economics"*</br>
+:::
+:::
+:::
+
+
+
+::: {.absolute top="70%" left="47%"}
+::: {style="font-size: 0.60em"}
+::: {.fragment .fade-in}
+Ín the midst of the debate the term "**rebound effect**" was born
+:::
+:::
+:::
+
+
+
+
+
+<!-- 
+
+ Leonard Brookes, independetly of Khazoom, had similar ideas.
+ 
+Both called the phenomenon ‘backfire’ 
+
+In later papers, Khazzoom (1987; 1989) noted that this phenomenon had been observed in the nineteenth century by the English philosopher and economist William Stanley Jevons
+
+Jevons, William Stanley, 1865/1965. The Coal Question: An Inquiry Concerning the Progress of the Nation, and the Probable Exhaustion of Our Coal-mines, 3rd edition 1905. New York: Augustus M. Kelley.
+
+"Coal in truth stands not beside but entirely above all other commodities. It is the material energy of the country — the universal aid — the factor in everything we do. With coal almost any feat is possible or easy; without it we are thrown back into the laborious poverty of early times"
+
+-->
+
+
+
+
+
+

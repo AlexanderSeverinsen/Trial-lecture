@@ -1,0 +1,65 @@
+
+##
+### Economy-wide rebound effect 
+
+::: {.absolute top="14%" left="0%"}
+::: {style="font-size: 0.80em"}
+
+:::{.incremental}
+- Recent review study by Brockway et al. (2021)
+- Compared 21 studies with 'computable general equilibrium' (CGE) models 
+- Average rebound effect of 58%
+- 12 studies with differing methods
+- Average rebound effect of 71%
+- 6 studies reported > 100% rebound effect
+:::
+
+:::
+:::
+
+
+
+::: {.absolute top="85%" left="0%"}
+::: {style="font-size: 0.55em"}
+::: {.fragment .fade-in}
+
+Brockway, Paul E., Steve Sorrell, Gregor Semieniuk, Matthew Kuperus Heun, and Victor Court. 2021. “*Energy Efficiency and Economy-Wide Rebound Effects: A Review of the Evidence and Its Implications*.” Renewable and Sustainable Energy Reviews 141 (May): 110781. <https://doi.org/10.1016/j.rser.2021.110781>
+
+:::
+:::
+:::
+
+##
+### Economy-wide rebound effect 
+
+::: {.absolute top="14%" left="0%"}
+::: {style="font-size: 0.80em"}
+
+:::{.incremental}
+- The study examined if these effects are factored into global energy models
+- Investigated BP, Shell, International Energy Agency, IPCC
+- The models were unable to capture all the rebound effects
+- Overestimating the global potential for energy savings 
+
+:::
+
+:::
+:::
+
+
+
+
+::: {.absolute top="85%" left="0%"}
+::: {style="font-size: 0.55em"}
+
+
+Brockway, Paul E., Steve Sorrell, Gregor Semieniuk, Matthew Kuperus Heun, and Victor Court. 2021. “*Energy Efficiency and Economy-Wide Rebound Effects: A Review of the Evidence and Its Implications*.” Renewable and Sustainable Energy Reviews 141 (May): 110781. <https://doi.org/10.1016/j.rser.2021.110781>
+
+
+:::
+:::
+
+
+
+
+

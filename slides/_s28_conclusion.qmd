@@ -1,0 +1,33 @@
+---
+format: 
+  revealjs:
+    theme: ["fonts_aneo.scss"]
+    css: styles.css
+    self-contained: true
+from: markdown+emoji
+---
+
+## Conclusions :scroll:
+
+::: {.incremental}
+- Rebound effects reduces the potential energy savings 
+- Future energy use projections should take this into account
+- Some of the lost savings :arrow_right: healthy houses
+- Not only a price effect :arrow_right: sosio-technical system
+- A holistic view might make it easier to collaborate across disciplines
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+## Setting the scene
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/ad_campaigns.png){width=100%}
+:::
+
+
+
+::: {.absolute top="85%" left="0%"}
+::: {style="font-size: 0.35em"}
+Magazine PSA from Newsweek, September 15, 1975. Artwork by commercial artist and Mad magazine contributor Jack Davis. </br>
+"A request" from The President of the United States, Gerald Ford. [Ford Library Museum](https://www.fordlibrarymuseum.gov/library/document/0011/18540921.pdf)  
+::: 
+:::
+
+<!-- 
+
+https://www.nytimes.com/1990/09/14/business/the-media-business-advertising-crisis-spurs-campaign-to-save-oil.html
+
+-->

@@ -1,0 +1,47 @@
+---
+format: 
+  revealjs:
+    theme: ["fonts_aneo.scss"]
+    css: styles.css
+    slide-number: true
+    self-contained: true
+from: markdown+emoji
+---
+
+##
+### Rebound effects in Norwegian buildings
+
+::: {.absolute top="10%" left="0%"}
+![](pictures/rebound_norway.png){width=100%}
+:::
+
+::: {.absolute top="18%" left="16%"}
+::: {style="font-size: 0.5em"}
+::: {.fragment .fade-in-then-out}
+In a year 2050 projection the rebound effect ≈ 20-28%
+:::
+:::
+:::
+
+
+::: {.absolute top="18%" left="16%"}
+::: {style="font-size: 0.5em"}
+::: {.fragment .fade-in}
+**Policy counteracting**
+
+- Information
+- Smart steering
+- Smart house design
+- Two-step tariffs (July 1 2022)
+
+:::
+:::
+:::
+
+
+::: {.absolute top="100%" left="15%"}
+::: {style="font-size: 0.4em"}
+Source: N.H. Sandberg et al. / Energy and Buildings 146 (2017) 220–232
+::: 
+:::
+

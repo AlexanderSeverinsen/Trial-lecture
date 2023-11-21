@@ -1,0 +1,18 @@
+## Agenda
+
+::: {.incremental}
+- Energy use in buildings  
+- The potential for energy savings in buildings
+- Energy efficiency and retrofitting
+- Rebound effects - setting the scene
+- Estimations methods - case study
+- Empirical evidence
+- Conclusions
+:::
+
+
+
+
+
+
+
