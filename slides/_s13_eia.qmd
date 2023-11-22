@@ -39,7 +39,7 @@ Part of the US Department of energy -->
 
 
 ::: {.absolute top="20%" left="0%"}
-![](pictures/eia-logomark.svg){width="250"}
+![](pictures/Eia-logomark.svg){width="250"}
 :::
 
 
