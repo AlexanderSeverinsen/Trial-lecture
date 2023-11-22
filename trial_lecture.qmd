@@ -4,7 +4,6 @@ format:
     theme: ["fonts_aneo.scss"]
     css: styles.css
     slide-number: true
-    self-contained: true
 from: markdown+emoji
 ---
 
