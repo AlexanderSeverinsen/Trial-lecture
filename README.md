@@ -1,3 +1,10 @@
+Trial lecture
+================
+Alexander Severinsen
+4/13/23
 
-My trail lecture given as part of my PhD defence  
-Lecture can be seen at: <https://alexanderseverinsen.github.io/Trial-lecture/trial_lecture.html#/>
+This repository contains my trial lecture given as part of my PhD
+defence.
+
+The presentation can be seen here:
+<https://alexanderseverinsen.github.io/Trial-lecture/trial_lecture.html>

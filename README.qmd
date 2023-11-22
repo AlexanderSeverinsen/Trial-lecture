@@ -1,0 +1,12 @@
+---
+title: "Trial lecture"
+author: "Alexander Severinsen"
+date: "2023-04-13"
+format: gfm
+---
+
+This repository contains my trial lecture given as part of my PhD defence. 
+
+The presentation can be seen here: <https://alexanderseverinsen.github.io/Trial-lecture/trial_lecture.html>
+
+
